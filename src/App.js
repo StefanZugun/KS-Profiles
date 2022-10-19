@@ -3,6 +3,7 @@ import DataTable from "./components/Table";
 
 const DUMMY_PROFILES = [
   {
+    id: 1,
     name: "Stefan Zugun",
     location: "Romania",
     skills: ["JavaScript", "React"],
@@ -13,6 +14,7 @@ const DUMMY_PROFILES = [
     languages: ["romanian", "english"],
   },
   {
+    id: 2,
     name: "Andre Drouge",
     location: "Sweden",
     skills: ["JavaScript", "React", "CSS"],
@@ -23,6 +25,7 @@ const DUMMY_PROFILES = [
     languages: ["swedish", "english"],
   },
   {
+    id: 3,
     name: "Cristian Alupoaie",
     location: "Romania",
     skills: ["Python"],
@@ -37,7 +40,7 @@ const DUMMY_PROFILES = [
 function App() {
   return (
     <>
-      <DataTable />
+      <DataTable profile={DUMMY_PROFILES} />
     </>
   );
 }
