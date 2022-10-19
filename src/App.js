@@ -1,4 +1,5 @@
 import "./App.css";
+import DataTable from "./components/Table";
 
 const DUMMY_PROFILES = [
   {
@@ -33,12 +34,12 @@ const DUMMY_PROFILES = [
   },
 ];
 
-for (const profile of DUMMY_PROFILES) {
-  console.log(profile.name);
-}
-
 function App() {
-  return <div className="App">Test to see if GIT works</div>;
+  return (
+    <>
+      <DataTable />
+    </>
+  );
 }
 
 export default App;
