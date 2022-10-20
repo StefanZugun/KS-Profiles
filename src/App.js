@@ -1,3 +1,4 @@
+import { Typography } from "@mui/material";
 import "./App.css";
 import DataTable from "./components/Table";
 
@@ -40,6 +41,9 @@ const DUMMY_PROFILES = [
 function App() {
   return (
     <>
+      <Typography variant="h3" sx={{ textAlign: "center", mt: 3, mb: 2 }}>
+        Employee Table
+      </Typography>
       <DataTable profile={DUMMY_PROFILES} />
     </>
   );
